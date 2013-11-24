@@ -20,6 +20,10 @@
 	background-color: transparent !important;
 }
 
+.nav-list {
+	padding-left: 3px;
+}
+
 .navbar-default {
 	border-radius: 0px !important;
 	background: #27ae60;
