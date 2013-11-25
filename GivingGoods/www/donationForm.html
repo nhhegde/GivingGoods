@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Giving Goods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="css/prettify.css" rel="stylesheet"> -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <!-- <link href="css/demo.css" rel="stylesheet"> -->
+    <link href="css/oren-custom.css" rel="stylesheet">
+
+    
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="navbar-header nav-justified">
+        <a class="navbar-left" href="dashboard.html"><i class="fa fa-home "></i></a>
+        <span class="navbar-brand">Donate: CalReUSE Clothing Drive</span>
+        <a class="navbar-right" href="message.html"><i class="fa fa-inbox"></i></a>
+      </div>
+    </div>
+    <div class="dialog">
+      <div class="container">
+        <div class="form-inline">
+          <div class="row col-xs-12">
+
+          </div>
+          <div class="row col-xs-12">
+                <div class="col-xs-5">
+                <label for="donationMaterials" class=" control-label center">What are you giving?</label>
+                </div>
+                <div class="col-xs-7"> 
+                <input type="text" class="form-control" placeholder="E.g. shirts..." id="donationMaterials">
+              </div>
+            </div> 
+            <div class="row col-xs-12">
+                <div class="col-xs-5">
+                <label for="datepicker-01" class=" control-label center">What day for pickup?</label>
+                </div>
+                <div class="col-xs-7 input-group"> 
+                  <span class="input-group-btn">
+                    <button class="btn" id="calButton" for="datepicker-01" type="button"><span class="fui-calendar"></span></button>
+                  </span>
+                <input type="text" class="form-control" placeholder="Select a day" id="datepicker-01">
+              </div>
+            </div> 
+            <div class="row col-xs-12">
+                <div class="col-xs-5">
+                <label for="donationTime" class="control-label center">What time is best?</label>
+                </div>
+                <div class="col-xs-7"> 
+                <input type="text" class="form-control" placeholder="3:00 PM" id="donationTime">
+              </div>
+            </div>
+            <div class="row col-xs-12">
+              <div class="col-xs-5">
+                <label class="control-label center" for="">Take a picture!</label>
+              </div>
+              <div class="col-xs-7">
+                <button class="btn" type="button"><i class="fa fa-camera-retro fa-3x" id="photoButton"></i></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-5">
+                <label for="comments" class="control-label center">Want to leave a note?</label>
+              </div>
+                <div class="col-xs-12"> 
+                <textarea class="form-control" id="comments" placeholder="Hello!"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>  
+    <div class="row donateButRow">
+      <a id="donateBut" href="requestPage.html" class="btn btn-lg btn-block btn-success">Donate</a>
+    </div>
+
+  </body>
+  <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>  
+    <script src="js/application.js"></script>
+</html>

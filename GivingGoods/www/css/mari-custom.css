@@ -1,0 +1,193 @@
+.navbar {
+	font-size: 25px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#searchFormGroup {
+	border-radius: 0px;
+	border: 0px;
+}
+
+
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent !important;
+}
+
+.nav-list {
+	padding-left: 3px;
+}
+
+.navbar-default {
+	border-radius: 0px !important;
+	background: #27ae60;
+}
+
+.container {
+	width: auto !important;
+	padding: 0px !important;
+}
+
+.navbar .fa-home {
+	font-size: 25px;
+	padding: 15px 9px;
+	color: #ecf0f1;
+	float: left;
+}
+
+.navbar .fa-inbox {
+	font-size: 25px;
+	padding: 15px 9px;
+	color: #ecf0f1;
+	float: right;
+}
+
+.navbar .navbar-brand {
+	padding: 15px 5px;
+	font-size: 18px;
+	padding-bottom: 0px;
+	color: #ecf0f1;
+	float: none;
+	font-weight: bolder;
+}
+
+.navbar .nav {
+	float: none;
+}
+
+.orgPicSec {
+	background-color: gray;
+	height: 200px;
+	padding: 1.60em;
+	text-align: center;
+	background-image:url('../images/requestBG.jpg');
+	color: #ecf0f1;
+}
+
+.orgProfPic {
+	height: 100px;
+	width: 100px;
+	padding-top: 3%;
+	margin: 0 auto;
+}
+
+.orgName {
+	font-weight: bolder;
+}
+
+.requestDetails {
+}
+
+.btn {
+	border: 1px solid #95a5a6;
+	padding: 1px 12px;
+	margin: 7px;
+}
+
+body {
+	background-color: #ecf0f1;
+}
+
+.btn-default {
+	background: #E6EDED;
+	font-color: red;
+}
+
+.requestInfoCell {
+	text-align: center;
+	border-bottom: 1px solid #bdc3c7;
+	border-right: 1px solid #bdc3c7;
+}
+
+.requestInfoCellLast {
+	text-align: center;
+	border-bottom: 1px solid #bdc3c7;
+}
+
+.requestContact {
+	text-align: center;
+	border-bottom: 1px solid #bdc3c7;
+}
+
+.requestHeadline, .requestDescription {
+	margin: 15px 15px;
+	font-size: 13px;
+	display: block;
+}
+
+.fa-clock-o, .fa-users {
+	font-size: 25px;
+	padding-top: 5px;
+}
+
+.donationBoardList > li {
+	height: 100px;
+}
+
+.midnightBlue {
+	color: #2c3e50;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.lighterFont {
+	font-weight: lighter;
+}
+
+.listPic {
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+.listInfo {
+	margin-top: 15px;
+}
+
+.fa {
+	font-size: 23px;
+	color: #21211F;
+}
+
+.form-group {
+	margin-bottom: 0px;
+}
+
+
+.orgPicSec .thumbnail {
+	background-image: url('../images/requestLogo.jpg');
+	border: 3px solid white;
+}
+
+.requestInfoText {
+	color: #292821;
+	font-weight: bold;
+}
+
+#donateBut {
+	padding: 10px 19px;
+	margin: 0px;
+	border: none;
+	border-radius: 0px;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.row {
+	margin-right: 0px;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+	padding-right: 0px;
+}
+
+#searchBut {
+	padding: 12px 15px;
+	margin: 0px 0px;
+	border: 0px;
+}
