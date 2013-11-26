@@ -88,9 +88,9 @@ var pictureSource;   // picture source
       // Retrieve image file location from specified source
       pictureSource=navigator.camera.PictureSourceType;
     	destinationType=navigator.camera.DestinationType;
-      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
-        destinationType: destinationType.FILE_URI,
-        sourceType: source });
+		navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI }); 
+
+
     }
 
     // Called if something bad happens.
@@ -98,7 +98,7 @@ var pictureSource;   // picture source
     function onSuccess(imageData) {
 
     	var cameraPic = document.getElementByID("cameraPic");
- 	   cameraPic.src = "data:image/jpeg;base64," + imageData;
+ 	   cameraPic.src = imageData;
 	}
 
 	function onFail(message) {
