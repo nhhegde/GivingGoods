@@ -19,6 +19,8 @@ body {
 	padding: 0px !important;
 }
 
+
+
 .footer {
     position: fixed; 
     bottom: 0;
@@ -86,6 +88,7 @@ label.center {
 .dialog {
 	margin-right: 2px;
 	padding: 0 0;
+	border-top: 0px !important;
 }
 .ui-datepicker {
 	left: 60px !important;
