@@ -12,7 +12,6 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/bin/res/drawable-mdpi/icon.png \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/bin/res/drawable-xhdpi/icon.png \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www \
-/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/alpha.html \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/config.xml \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/cordova.js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/cordova_plugins.js \
@@ -27,6 +26,7 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/listView.html \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/old \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/phonegap.js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/requestPage.html \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res \
@@ -123,6 +123,7 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less/spinning.less \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less/stacked.less \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less/variables.less \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/old/index.html \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/screen \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/android \

@@ -8,8 +8,8 @@ var pictureSource;   // picture source
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
-        pictureSource=navigator.camera.PictureSourceType;
-        destinationType=navigator.camera.DestinationType;
+    	console.log("onDeviceReady has been called")
+        
     }
 
     // Called when a photo is successfully retrieved
@@ -57,9 +57,16 @@ var pictureSource;   // picture source
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
       cameraPic.src = "images/list1.jpg";
-      $("#takePhotoButton").remove();
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL });
+      
+      
+      var options = { quality: 50, 
+      					destinationType: Camera.DestinationType.DATA_URL,sourceType:
+      					 Camera.PictureSource.SAVEDPHOTOALBUM};
+
+ 		navigator.camera.getPicture(onSuccess, onFail, options);
+    //  $("#takePhotoButton").remove();
+    //  navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+      //  destinationType: destinationType.DATA_URL });
       //jnavigator.camera.getPicture(uploadPhoto, null, {sourceType:1,  quality: 50});
     }
 
@@ -79,6 +86,8 @@ var pictureSource;   // picture source
     //
     function getPhoto(source) {
       // Retrieve image file location from specified source
+      pictureSource=navigator.camera.PictureSourceType;
+    	destinationType=navigator.camera.DestinationType;
       navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
         destinationType: destinationType.FILE_URI,
         sourceType: source });
@@ -86,6 +95,12 @@ var pictureSource;   // picture source
 
     // Called if something bad happens.
     // 
-    function onFail(message) {
-      alert('Failed because: ' + message);
-    }
+    function onSuccess(imageData) {
+
+    	var cameraPic = document.getElementByID("cameraPic");
+ 	   cameraPic.src = "data:image/jpeg;base64," + imageData;
+	}
+
+	function onFail(message) {
+    	alert('Failed because: ' + message);
+	}
