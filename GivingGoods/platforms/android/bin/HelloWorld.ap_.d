@@ -12,6 +12,7 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/bin/res/drawable-mdpi/icon.png \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/bin/res/drawable-xhdpi/icon.png \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/alpha.html \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/config.xml \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/cordova.js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/cordova_plugins.js \
