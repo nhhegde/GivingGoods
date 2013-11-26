@@ -110,6 +110,7 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/js/jquery.placeholder.js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/js/jquery.tagsinput.js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/js/jquery.ui.touch-punch.min.js \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/js/Ocam.js \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less/bordered-pulled.less \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less/core.less \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/less/fixed-width.less \
