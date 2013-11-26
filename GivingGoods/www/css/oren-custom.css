@@ -119,3 +119,15 @@ textarea.form-control {
 input, textarea {
 	font-size: 10pt;
 }
+
+.checkbox .icons .first-icon, .radio .icons .first-icon, .checkbox .icons .second-icon, .radio .icons .second-icon {
+	background-color: transparent;
+}
+
+.checkbox.checked .second-icon{
+	color: #27ae60;
+}
+
+.checkbox.checked {
+	color: #34495e;
+}
