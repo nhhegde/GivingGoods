@@ -105,6 +105,8 @@ label.center {
 
 #donateBut {
 	border-radius: 0px;
+	font-weight: bolder;
+	font-size: 25px;
 }
 input, textarea {
 	font-size: 10pt;
