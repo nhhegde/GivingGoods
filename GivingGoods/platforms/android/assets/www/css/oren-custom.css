@@ -1,0 +1,111 @@
+body {
+	background-color: #ecf0f1;
+}
+
+.navbar {
+	font-size: 25px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+.navbar-default {
+	border-radius: 0px !important;
+	background: #27ae60;
+}
+
+.container {
+	width: auto !important;
+	padding: 0px !important;
+}
+
+.footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navbar .fa-home {
+	font-size: 25px;
+	padding: 15px 9px;
+	color: #ecf0f1;
+	float: left;
+}
+
+.navbar .fa-inbox {
+	font-size: 25px;
+	padding: 15px 9px;
+	color: #ecf0f1;
+	float: right;
+}
+
+.navbar .navbar-brand {
+	padding: 15px 5px;
+	font-size: 14px;
+	padding-bottom: 0px;
+	color: #ecf0f1;
+	float: none;
+	font-weight: bolder;
+}
+
+.navbar .nav {
+	float: none;
+}.center {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+#calButton {
+	display: inline-block;
+	margin-top: 0;
+	margin-right: -2px;
+}
+#datepicker-01 {
+	display: inline-block;
+	padding-left: 5px;
+}
+label {
+	font-size: 10pt;
+	margin: 0 0;
+}
+.col-xs-6, .col-xs-7, .col-xs-5{
+	padding: 1px 1px;
+}
+input {
+
+}
+label.center {
+	margin-top: 8px;
+}
+.row {
+	padding-right: 2px;
+	padding-left:  2px;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.dialog {
+	margin-right: 2px;
+	padding: 0 0;
+}
+.ui-datepicker {
+	left: 60px !important;
+}
+.btn-primary {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #2ecc71;
+}
+
+.donateButRow {
+	margin: 0px;
+	padding: 0px;
+}
+
+#donateBut {
+	border-radius: 0px;
+}
+input, textarea {
+	font-size: 10pt;
+}
