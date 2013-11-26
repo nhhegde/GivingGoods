@@ -56,10 +56,17 @@ var pictureSource;   // picture source
     //
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
+      cameraPic.src = "images/list1.jpg";
+      $("#takePhotoButton").remove();
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
         destinationType: destinationType.DATA_URL });
+      //jnavigator.camera.getPicture(uploadPhoto, null, {sourceType:1,  quality: 50});
     }
 
+
+    function uploadPhoto(data) {
+      cameraPic.src = "data:image/jpeg;base64," + data;
+    }
     // A button will call this function
     //
     function capturePhotoEdit() {
