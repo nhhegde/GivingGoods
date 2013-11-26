@@ -108,6 +108,11 @@ label.center {
 	font-weight: bolder;
 	font-size: 25px;
 }
+
+textarea.form-control {
+	height: 200px;
+}
+
 input, textarea {
 	font-size: 10pt;
 }
