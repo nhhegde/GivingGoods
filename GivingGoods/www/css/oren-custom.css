@@ -112,6 +112,20 @@ label.center {
 	font-size: 25px;
 }
 
+.ui-datepicker {
+	border: 7px solid #27ae60;
+}
+
+.ui-datepicker .ui-datepicker-next {
+	border-left: 2px solid #27ae60;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	border-right: 2px solid #27ae60;
+}
+
+
+
 textarea.form-control {
 	height: 200px;
 }
