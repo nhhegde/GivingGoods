@@ -22,10 +22,6 @@ body {
 
 
 .footer {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 .navbar .fa-home {
 	font-size: 25px;
@@ -148,4 +144,12 @@ input, textarea {
 
 .checkbox.disabled, .radio.disabled {
 	color: #bdc3c7;
+}
+
+.form-group.focus .form-control, .form-control:focus {
+	border-color: #27ae60;
+}
+
+.input-group .input-group-btn:first-child .btn:focus{
+	border-color: #27ae60;
 }
