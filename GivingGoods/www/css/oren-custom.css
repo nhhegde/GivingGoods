@@ -131,3 +131,7 @@ input, textarea {
 .checkbox.checked {
 	color: #34495e;
 }
+
+.checkbox.disabled, .radio.disabled {
+	color: #bdc3c7;
+}
