@@ -9,9 +9,6 @@
 	border: 0px;
 }
 
-
-
-
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent !important;
 }
@@ -190,4 +187,21 @@ body {
 	padding: 12px 15px;
 	margin: 0px 0px;
 	border: 0px;
+}
+
+a {
+	color: #27ae60;
+	font-weight: 1em;
+}
+
+a:hover {
+	color: #27ae60;
+}
+
+.requestName {
+	font-weight: 800;
+}
+
+.requestOrg {
+	font-weight: 525;
 }
