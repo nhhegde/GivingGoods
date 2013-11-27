@@ -189,6 +189,10 @@ body {
 	border: 0px;
 }
 
+.center {
+	margin: 0 auto;
+}
+
 a {
 	color: #27ae60;
 	font-weight: 1em;
@@ -204,4 +208,49 @@ a:hover {
 
 .requestOrg {
 	font-weight: 525;
+}
+
+
+.mainProfileContainer {
+	height: 275px;
+	background-color: red;
+}
+
+.profPicContainer {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	margin-top: 30px;
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+}
+
+#profilePic {
+	width: 150px;
+	height: 150px;
+}
+
+.profInfoContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	margin-top: 180px;
+	font-size: 15px;
+}
+
+.donReqContainer {
+	width: 270px;
+	background-color: orange;
+}
+
+#profDonateBut {
+	float: left;
+}
+
+#requestBut {
+	float: right;
 }
