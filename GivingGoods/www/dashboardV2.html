@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-xs-12 mainProfileContainer">
         <div class="profPicContainer">
-          <img id="profilePic" src="/images/coolImg.jpg" alt="cool">
+          <img id="profilePic" src="images/dashPic.jpg" alt="cool">
         </div>
         
         <div class="profInfoContainer">
@@ -43,34 +43,42 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="donReqContainer center">
-          <a id="profDonateBut" href="listView.html" class="btn ">Donate</a>
-          <a id="requestBut" href="" class="btn">Request</a>
-        </div>
+    <div class="row whiteBG">
+      <div class="col-xs-6 requestInfoCell">
+        <a href="listView.html">
+          <div>
+            <i class="fa fa-heart customFA"></i>
+          </div>
+          <span class="requestInfoText">Donate</span>
+        </a>
+      </div>
+      <div class="col-xs-6 requestInfoCellLast">
+        <a href="">
+          <div>
+            <i class="fa fa-flag customFA"></i>
+          </div>
+          <span class="requestInfoText"> Request </span>
+        </a>
       </div>
     </div>
 
-    <div class="myDonations">
-      <span class="organizations">Donations</span>
+    <div class="myDonationsHeader">
+      <i class="fa fa-gift smallProfIcon"></i><span class="organizations"> Donations</span>
     </div>
 
-    <ul class="nav nav-list orgsList">
+    <ul class="nav nav-list donationList">
       <li>
-        <a href="requestPage.html">
-          <img src="images/list1.jpg" class="listPic"/>
+          <img src="images/list1.jpg" class="listPicProf"/>
           <div class="listInfo2">
-            <span>Cal ReUSE: Clothing Drive</span><br>
-            <span>11/10/2013, 5:00 PM</span>
-            <span class="badge pull-right"> > </span>
+            <span class="donationTitle">Cal ReUSE: Clothing Drive</span><br>
+            <span>11/10/2013</span><br>
+            <span>5:00 PM Pickup</span>
           </div>
-        </a>
       </li>
     </ul>
 
     <div class="myOrgs">
-      <span class="organizations">My Organizations</span>
+      <i class="fa fa-suitcase smallProfIcon"></i><span class="organizations"> My Organizations</span>
     </div>
 
 
@@ -78,7 +86,7 @@
       <li>
         <a href="requestPage.html">
           <img src="images/reuselogo.gif" class="listPic"/>
-          <div class="listInfo">
+          <div class="listInfo heavyFont">
             <span>Cal ReUSE</span>
             <span class="badge pull-right"> > </span>
           </div>

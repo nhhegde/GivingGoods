@@ -213,7 +213,7 @@ a:hover {
 
 .mainProfileContainer {
 	height: 275px;
-	background-color: red;
+	background-image: url('../images/dashboardBG.jpg');
 }
 
 .profPicContainer {
@@ -225,11 +225,14 @@ a:hover {
 	width: 150px;
 	height: 150px;
 	background-color: blue;
+
 }
 
 #profilePic {
 	width: 150px;
 	height: 150px;
+	border: 3px solid white;
+	border-radius: 2px;
 }
 
 .profInfoContainer {
@@ -240,17 +243,68 @@ a:hover {
 	text-align: center;
 	margin-top: 180px;
 	font-size: 15px;
+	color: white;
 }
 
 .donReqContainer {
 	width: 270px;
 	background-color: orange;
+	font-size: 13px;
 }
 
-#profDonateBut {
+#profDonateBut, #requestBut {
 	float: left;
+	font-size: 18px;
+	border: 0px;
+	font-weight: 600;
+	margin-right: 15px;
+	background-color: #E1E3E6;
 }
 
-#requestBut {
-	float: right;
+.customFA {
+	font-size: 20px;
+	color: #27ae60;
+}
+
+.donationList {
+	background-color: transparent;
+	padding-left: 0px;
+
+}
+
+.whiteBG {
+	background-color: white;
+}
+
+.myDonationsHeader, .myOrgs {
+	background-color: #27ae60;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+	padding-left: 6px;
+}
+
+.smallProfIcon {
+	color: white;
+	font-size: inherit;
+}
+
+.listPicProf {
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+.donationTitle {
+	font-weight: 600;
+}
+
+.listInfo2 {
+	line-height: 1.85;
+	font-size: 15px;
+}
+
+.heavyFont {
+	font-weight: 800;
 }
