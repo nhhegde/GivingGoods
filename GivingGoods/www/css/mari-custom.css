@@ -362,7 +362,7 @@ a:hover {
 	float: left;
 	font-size: 14px;
 	margin-left: 5px;
-	width: 130px;
+	width: 240px;
 }
 
 .receiverMessage {
@@ -372,13 +372,13 @@ a:hover {
 }
 
 .convoList li {
-	height: 100px;
+	height: 80px;
 }
 
-.senderMessageContainer .convoPic {
+.receiverMessageContainer .convoPic {
 	float: right;
 }
 
-.senderMessageContainer div {
+.receiverMessageContainer div {
 	float: right;
 }
