@@ -402,6 +402,7 @@ a:hover {
 	margin-bottom: 5px;
 }
 
-.sendBut {
-	margin-top: 17px;
+#sendBut {
+	height: 50px;
+	width: 65px;
 }
