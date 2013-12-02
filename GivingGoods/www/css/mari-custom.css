@@ -382,3 +382,15 @@ a:hover {
 .receiverMessageContainer div {
 	float: right;
 }
+
+.senderMessageContainer {
+	margin-left: 7px;
+	margin-top: 5px;
+}
+
+#messageInput {
+	width: 220px;
+	margin-left: 20px;
+	margin-right: 5px;
+	float: left;
+}
