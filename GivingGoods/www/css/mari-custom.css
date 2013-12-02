@@ -148,7 +148,7 @@ body {
 
 .fa {
 	font-size: 23px;
-	color: #21211F;
+	color: #34495e;
 }
 
 .form-group {
@@ -314,7 +314,23 @@ a:hover {
 }
 
 #orgEmail, #orgPhone {
-	width: 200px;
 	display: inline;
 	margin-bottom:5px;
+}
+
+#orgEmail {
+	width: 220px;
+	margin-left: 5px;
+}
+
+#orgPhone {
+	width: 220px;
+}
+
+.orgIcon {
+	color:#34495e;
+}
+
+.noReq {
+	margin-left: 3px;
 }
