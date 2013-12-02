@@ -31,7 +31,7 @@
     <div class="navbar navbar-default">
       <div class="navbar-header nav-justified">
         <a class="navbar-left" href="dashboard.html"><i class="fa fa-home "></i></a>
-        <span class="navbar-brand">Add Request</span>
+        <span id="addReqTitle" class="navbar-brand">Add Request</span>
         <a class="navbar-right" href="message.html"><i class="fa fa-inbox"></i></a>
       </div>
     </div>
@@ -46,7 +46,7 @@
                 <label for="donationMaterials" class=" control-label center">Request Name:</label>
                 </div>
                 <div class="col-xs-7"> 
-                <input type="text" class="form-control" placeholder="Shirts, socks, suits.." id="donationMaterials">
+                <input type="text" class="form-control" placeholder="Request Name" id="donationMaterials">
               </div>
             </div> 
             <div class="row col-xs-12">
@@ -67,7 +67,7 @@
             </div> 
             <div class="row col-xs-12">
                 <div class="col-xs-5">
-                <label for="datepicker-01" class=" control-label center">What day for pickup?</label>
+                <label for="datepicker-01" class=" control-label center">Start Date:</label>
                 </div>
                 <div class="col-xs-7 input-group"> 
                   <span class="input-group-btn">
@@ -77,26 +77,38 @@
               </div>
             </div> 
             <div class="row col-xs-12">
-                <div class="col-xs-5">
-                <label for="donationTime" class="control-label center">What time is best?</label>
-                </div>
-                <div class="col-xs-7"> 
-                <input type="text" class="form-control" placeholder="3:00 PM" id="donationTime">
+              <div class="col-xs-5">
+              <label for="donationTime" class="control-label center">End Date:</label>
+              </div>
+              <div class="col-xs-7 input-group"> 
+                <span class="input-group-btn">
+                  <button class="btn" id="calButton" for="datepicker-01" type="button"><span class="fui-calendar"></span></button>
+                </span>
+                <input type="text" class="form-control" placeholder="MM/DD/YY">
               </div>
             </div>
             <div class="row">
+                <div class="col-xs-5">
+                  <label for="comments" class="control-label center">Items Needed:</label>
+                </div>
+                  <div class="col-xs-12"> 
+                  <textarea class="form-control" id="itemsNeeded" placeholder="Shirts, socks, canned food, etc..."></textarea>
+                </div>
+            </div>
+            </div>
+            <div class="row">
               <div class="col-xs-5">
-                <label for="comments" class="control-label center">Leave a note?</label>
+                <label for="comments" class="control-label center">Request Description:</label>
               </div>
                 <div class="col-xs-12"> 
-                <textarea class="form-control" id="comments" placeholder="You guys are awesome!"></textarea>
+                <textarea class="form-control" id="comments" placeholder="What is the request all about? Canned food drive, clothing drive....?"></textarea>
               </div>
             </div>
           </div>
         </div>
     </div> 
     <div class="row donateButRow footer">
-      <a id="donateBut" href="dashboardNew.html" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Donate</a>
+      <a id="donateBut" href="orgDashboardNew.html" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Add Request</a>
     </div>
 
   </body>

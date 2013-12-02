@@ -152,3 +152,11 @@ input, textarea {
 .input-group .input-group-btn:first-child .btn:focus{
 	border-color: #27ae60;
 }
+
+#itemsNeeded {
+	height: 100px;
+}
+
+#addReqTitle {
+	font-size: 20px;
+}
