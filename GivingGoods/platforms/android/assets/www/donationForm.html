@@ -26,13 +26,118 @@
         alert("Thanks for your donation! We will be in touch soon.");
       }
     </script>
+  <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>  
+    <script src="js/application.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    <script type="text/javascript" charset="utf-8">
+	
+    var pictureSource;   // picture source
+    var destinationType; // sets the format of returned value
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready",onDeviceReady,false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+
+    // Called when a photo is successfully retrieved
+    //
+    function onPhotoDataSuccess(imageData) {
+      // Uncomment to view the base64-encoded image data
+      // console.log(imageData);
+
+      // Get image handle
+      //
+      var smallImage = document.getElementById('smallImage');
+
+      // Unhide image elements
+      //
+      smallImage.style.display = 'block';
+
+      // Show the captured photo
+      // The inline CSS rules are used to resize the image
+      //
+      smallImage.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    // Called when a photo is successfully retrieved
+    //
+    function onPhotoURISuccess(imageURI) {
+      // Uncomment to view the image file URI
+      // console.log(imageURI);
+
+      // Get image handle
+      //
+      var largeImage = document.getElementById('largeImage');
+
+      // Unhide image elements
+      //
+      largeImage.style.display = 'block';
+
+      // Show the captured photo
+      // The inline CSS rules are used to resize the image
+      //
+      largeImage.src = imageURI;
+    }
+    
+    // A button will call this function
+    //
+    function capturePhoto() {
+      // Take picture using device camera and retrieve image as base64-encoded string
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // A button will call this function
+    //
+    function capturePhotoEdit() {
+      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // A button will call this function
+    //
+    function getPhoto(source) {
+      // Retrieve image file location from specified source
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50,
+        destinationType: destinationType.FILE_URI,
+        sourceType: source });
+    }
+
+    // Called if something bad happens.
+    //
+    function onFail(message) {
+      alert('Failed because: ' + message);
+    }
+
+
+    </script>
   </head>
   <body>
     <div class="navbar navbar-default">
       <div class="navbar-header nav-justified">
         <a class="navbar-left" href="dashboard.html"><i class="fa fa-home "></i></a>
         <span class="navbar-brand">Donate: CalReUSE Clothing Drive</span>
-        <a class="navbar-right" href="message.html"><i class="fa fa-inbox"></i></a>
+        <a class="navbar-right" href="messageList.html"><i class="fa fa-inbox"></i></a>
       </div>
     </div>
     <div class="dialog">
@@ -46,8 +151,24 @@
                 <label for="donationMaterials" class=" control-label center">What are you giving?</label>
                 </div>
                 <div class="col-xs-7"> 
-                <input type="text" class="form-control" placeholder="E.g. shirts..." id="donationMaterials">
+                <input type="text" class="form-control" placeholder="Shirts, socks, suits.." id="donationMaterials">
               </div>
+            </div> 
+            <div class="row col-xs-12">
+                <div class="col-xs-5">
+                  <label for="pickupdropoff" class=" control-label center">Pickup/Dropoff?</label>
+                </div>
+                <div class="col-xs-7">
+                  <label class="checkbox" for="checkbox2">
+                    <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+                    Pickup
+                  </label>
+
+                  <label class="checkbox" for="checkbox3">
+                    <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+                    Dropoff
+                  </label>
+                </div>
             </div> 
             <div class="row col-xs-12">
                 <div class="col-xs-5">
@@ -57,7 +178,7 @@
                   <span class="input-group-btn">
                     <button class="btn" id="calButton" for="datepicker-01" type="button"><span class="fui-calendar"></span></button>
                   </span>
-                <input type="text" class="form-control" placeholder="Select a day" id="datepicker-01">
+                <input type="text" class="form-control" placeholder="MM/DD/YY">
               </div>
             </div> 
             <div class="row col-xs-12">
@@ -73,13 +194,15 @@
                 <label class="control-label center" for="">Take a picture!</label>
               </div>
               <div class="col-xs-7">
-                <button id="takePhotoButton" class="btn" type="button" onclick="getPhoto();"><i class="fa fa-camera-retro fa-3x" id="photoButton"></i></button>
-                <img id="cameraPic" src="" style="width:auto;height:120px;"></img>
+                <button class="btn" type="button" onclick="capturePhoto();"><i class="fa fa-camera-retro fa-3x" id="photoButton"></i></button>
+                <img onclick="capturePhoto();" id="cameraPic" src="" style="width:auto;height:120px;"></img>
+                <br> <button href="Camera.html" style="width:300px;height:300px;">Capture Photo</button> <br>
+                <a href="Camera.html">Click Me</a>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-5">
-                <label for="comments" class="control-label center">Want to leave a note?</label>
+                <label for="comments" class="control-label center">Leave a note?</label>
               </div>
                 <div class="col-xs-12"> 
                 <textarea class="form-control" id="comments" placeholder="You guys are awesome!"></textarea>
@@ -87,23 +210,11 @@
             </div>
           </div>
         </div>
-    </div>  
+    </div> 
     <div class="row donateButRow footer">
-      <a id="donateBut" href="dashboard.html" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Donate</a>
+      <a id="donateBut" href="dashboardNew.html" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Donate</a>
     </div>
 
   </body>
-  <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
-  <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>  
-    <script src="js/application.js"></script>
-    <script src="js/camera.js"></script>
+  
 </html>

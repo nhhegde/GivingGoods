@@ -20,11 +20,8 @@ body {
 }
 
 .footer {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
+
 .navbar .fa-home {
 	font-size: 25px;
 	padding: 15px 9px;
@@ -86,6 +83,7 @@ label.center {
 .dialog {
 	margin-right: 2px;
 	padding: 0 0;
+	border-top: 0px !important;
 }
 .ui-datepicker {
 	left: 60px !important;
@@ -109,10 +107,56 @@ label.center {
 	font-size: 25px;
 }
 
+.ui-datepicker {
+	border: 7px solid #27ae60;
+}
+
+.ui-datepicker .ui-datepicker-next {
+	border-left: 2px solid #27ae60;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	border-right: 2px solid #27ae60;
+}
+
+
+
 textarea.form-control {
 	height: 200px;
 }
 
 input, textarea {
 	font-size: 10pt;
+}
+
+.checkbox .icons .first-icon, .radio .icons .first-icon, .checkbox .icons .second-icon, .radio .icons .second-icon {
+	background-color: transparent;
+}
+
+.checkbox.checked .second-icon{
+	color: #27ae60;
+}
+
+.checkbox.checked {
+	color: #34495e;
+}
+
+.checkbox.disabled, .radio.disabled {
+	color: #bdc3c7;
+}
+
+.form-group.focus .form-control, .form-control:focus {
+	border-color: #27ae60;
+}
+
+.input-group .input-group-btn:first-child .btn:focus{
+	border-color: #27ae60;
+}
+
+#itemsNeeded {
+	height: 100px;
+}
+
+#addReqTitle {
+	font-size: 20px;
 }

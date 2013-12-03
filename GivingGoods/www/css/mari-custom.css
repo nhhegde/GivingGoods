@@ -9,9 +9,6 @@
 	border: 0px;
 }
 
-
-
-
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent !important;
 }
@@ -151,7 +148,7 @@ body {
 
 .fa {
 	font-size: 23px;
-	color: #21211F;
+	color: #34495e;
 }
 
 .form-group {
@@ -190,4 +187,150 @@ body {
 	padding: 12px 15px;
 	margin: 0px 0px;
 	border: 0px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+a {
+	color: #27ae60;
+	font-weight: 1em;
+}
+
+a:hover {
+	color: #27ae60;
+}
+
+.requestName {
+	font-weight: 800;
+}
+
+.requestOrg {
+	font-weight: 525;
+}
+
+
+.mainProfileContainer {
+	height: 275px;
+	background-image: url('../images/dashboardBG.jpg');
+}
+
+.profPicContainer {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	margin-top: 30px;
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+}
+
+#profilePic {
+	width: 150px;
+	height: 150px;
+	border: 3px solid white;
+	border-radius: 2px;
+}
+
+.profInfoContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	margin-top: 180px;
+	font-size: 15px;
+	color: white;
+}
+
+.donReqContainer {
+	width: 270px;
+	background-color: orange;
+	font-size: 13px;
+}
+
+#profDonateBut, #requestBut {
+	float: left;
+	font-size: 18px;
+	border: 0px;
+	font-weight: 600;
+	margin-right: 15px;
+	background-color: #E1E3E6;
+}
+
+.customFA {
+	font-size: 20px;
+	color: #27ae60;
+}
+
+.donationList {
+	background-color: transparent;
+	padding-left: 0px;
+
+}
+
+.whiteBG {
+	background-color: white;
+}
+
+.myDonationsHeader, .myOrgs {
+	background-color: #27ae60;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+	padding-left: 6px;
+}
+
+.smallProfIcon {
+	color: white;
+	font-size: inherit;
+}
+
+.listPicProf {
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+.donationTitle {
+	font-weight: 600;
+}
+
+.listInfo2 {
+	line-height: 1.85;
+	font-size: 15px;
+}
+
+.heavyFont {
+	font-weight: 800;
+}
+
+.myOrgTitle {
+	font-size: 16px !important;
+}
+
+#orgEmail, #orgPhone {
+	display: inline;
+	margin-bottom:5px;
+}
+
+#orgEmail {
+	width: 220px;
+	margin-left: 5px;
+}
+
+#orgPhone {
+	width: 220px;
+}
+
+.orgIcon {
+	color:#34495e;
+}
+
+.noReq {
+	margin-left: 3px;
 }

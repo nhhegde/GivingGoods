@@ -19,10 +19,9 @@ body {
 	padding: 0px !important;
 }
 
-
-
 .footer {
 }
+
 .navbar .fa-home {
 	font-size: 25px;
 	padding: 15px 9px;
@@ -152,4 +151,12 @@ input, textarea {
 
 .input-group .input-group-btn:first-child .btn:focus{
 	border-color: #27ae60;
+}
+
+#itemsNeeded {
+	height: 100px;
+}
+
+#addReqTitle {
+	font-size: 20px;
 }

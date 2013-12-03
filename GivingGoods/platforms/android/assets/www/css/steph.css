@@ -111,6 +111,10 @@ body {
 	margin-top: 40px;
 }
 
+.listInfo2 {
+	margin-top: 30px;
+}
+
 .orgsList > li {
 	height: 100px;
 }
