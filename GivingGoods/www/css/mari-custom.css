@@ -224,7 +224,6 @@ a:hover {
 	margin-top: 30px;
 	width: 150px;
 	height: 150px;
-	background-color: blue;
 
 }
 
@@ -232,7 +231,7 @@ a:hover {
 	width: 150px;
 	height: 150px;
 	border: 3px solid white;
-	border-radius: 2px;
+	border-radius: 80px;
 }
 
 .profInfoContainer {
@@ -340,6 +339,7 @@ a:hover {
 .convoPic {
 	width: 50px;
 	float: left;
+	border-radius: 50px;
 }
 
 .convoList {
