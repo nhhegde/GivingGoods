@@ -173,6 +173,9 @@ body {
 	border-radius: 0px;
 	font-weight: bolder;
 	font-size: 25px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .row {
@@ -405,4 +408,8 @@ a:hover {
 #sendBut {
 	height: 50px;
 	width: 65px;
+}
+
+.infoRow {
+	height:200px;
 }
