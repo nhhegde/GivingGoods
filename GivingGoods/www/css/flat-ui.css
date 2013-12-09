@@ -4181,7 +4181,7 @@ fieldset[disabled] .input-group .input-group-btn:first-child .btn-default.active
   font-weight: normal;
   color: #ffffff;
   line-height: 1.615;
-  background-color: #d8dce0;
+  background-color: #fff;
   border-radius: 4px;
   padding: 0 8px;
 }
@@ -4637,7 +4637,12 @@ a.list-group-item.active > .badge,
   text-shadow: none;
 }
 .nav-list .badge.pull-right {
-  margin: 1px -4px -1px 0;
+  /* margin: 1px -4px -1px 0; */
+  color: #27ae60;
+  font-weight: 800;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 35px;
 }
 .nav-header {
   color: #aeb6bf;
@@ -4915,7 +4920,7 @@ a.list-group-item.active > .badge,
   margin: 0 4px 0 9px;
 }
 .popover {
-  background-color: #edeff1;
+  background-color: #ecf0f1;
   border: none;
   padding: 0;
   -webkit-box-shadow: none;
@@ -4956,7 +4961,6 @@ a.list-group-item.active > .badge,
   padding: 10px 20px 11px;
 }
 .popover-content {
-  padding: 9px 20px 1px;
 }
 .popover-content p {
   font-size: 14px;
