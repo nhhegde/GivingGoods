@@ -164,7 +164,7 @@ input, textarea {
 
 .alert {
 	position: fixed;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	margin-left: -150px;
 	width: 300px;
@@ -179,4 +179,8 @@ input, textarea {
 
 .pad {
 	height: 100px;
+}
+
+.addReqLastRow {
+	height: 250px;
 }
