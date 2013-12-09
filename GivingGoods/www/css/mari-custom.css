@@ -413,3 +413,11 @@ a:hover {
 .infoRow {
 	height: 330px;
 }
+
+.addReqLastRow {
+	height: 375px;
+}
+
+.customListInfo {
+	height: 150px;
+}
