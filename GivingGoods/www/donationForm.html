@@ -21,11 +21,6 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <script>
-      function thankuser() {
-        alert("Thanks for your donation! We will be in touch soon.");
-      }
-    </script>
   </head>
   <body>
     <div class="navbar navbar-default">
@@ -96,12 +91,18 @@
         </div>
     </div> 
     <div class="row donateButRow footer">
-      <a id="donateBut" href="dashboardNew.html" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Donate</a>
+      <a id="donateBut" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Donate</a>
+    </div>
+    
+    <div class="alert">
+      <p>Thanks for your donation!</p>
+      <p>We will be in touch soon.</p>
+      <a href="dashboardNew.html"> <button class="btn btn-small btn-success confirmDonationBut"> OK </button></a>
     </div>
 
   </body>
-  <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
-  <script src="js/jquery-1.8.3.min.js"></script>
+    
+    <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -112,5 +113,14 @@
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>  
     <script src="js/application.js"></script>
-    <script src="js/camera.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".alert").hide();
+      })
+
+      function thankuser() {
+        console.log("hi");
+        $(".alert").show();
+      }
+    </script>
 </html>

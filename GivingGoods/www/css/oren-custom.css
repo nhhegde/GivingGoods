@@ -160,3 +160,18 @@ input, textarea {
 #addReqTitle {
 	font-size: 20px;
 }
+
+.alert {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	text-align: center;
+	display: none;
+}
+
+.confirmDonationBut {
+	width: 235px;
+	margin: 0 auto;	
+}
