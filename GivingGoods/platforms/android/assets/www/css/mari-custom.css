@@ -173,6 +173,9 @@ body {
 	border-radius: 0px;
 	font-weight: bolder;
 	font-size: 25px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .row {
@@ -224,7 +227,6 @@ a:hover {
 	margin-top: 30px;
 	width: 150px;
 	height: 150px;
-	background-color: blue;
 
 }
 
@@ -232,7 +234,7 @@ a:hover {
 	width: 150px;
 	height: 150px;
 	border: 3px solid white;
-	border-radius: 2px;
+	border-radius: 80px;
 }
 
 .profInfoContainer {
@@ -333,4 +335,89 @@ a:hover {
 
 .noReq {
 	margin-left: 3px;
+}
+
+.convoPic {
+	width: 50px;
+	float: left;
+	border-radius: 50px;
+}
+
+.convoList {
+	margin-top: 5px;
+	line-height:1.3
+}
+
+.senderName, .receiverName {
+	float: left;
+	font-size: 14px;
+	font-weight: bolder;
+	margin-left: 5px;
+}
+
+.receiverName {
+	margin-left: 0px;
+	margin-right: 5px;
+	float: right;
+}
+
+.senderMessage{
+	float: left;
+	font-size: 14px;
+	margin-left: 5px;
+	width: 240px;
+}
+
+.receiverMessage {
+	float: right;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.convoList li {
+	height: 80px;
+}
+
+.receiverMessageContainer .convoPic {
+	float: right;
+}
+
+.receiverMessageContainer div {
+	float: right;
+}
+
+.senderMessageContainer {
+	margin-top: 5px;
+	margin-left: 7px;
+}
+
+#messageInput {
+	width: 220px;
+	margin-left: 10px;
+	margin-right: 5px;
+	float: left;
+}
+
+.messageInContainer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 5px;
+}
+
+#sendBut {
+	height: 50px;
+	width: 65px;
+}
+
+.infoRow {
+	height: 330px;
+}
+
+.addReqLastRow {
+	height: 375px;
+}
+
+.customListInfo {
+	height: 150px;
 }

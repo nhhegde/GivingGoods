@@ -19,8 +19,6 @@ body {
 	padding: 0px !important;
 }
 
-.footer {
-}
 
 .navbar .fa-home {
 	font-size: 25px;
@@ -99,6 +97,9 @@ label.center {
 .donateButRow {
 	margin: 0px;
 	padding: 0px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 #donateBut {
@@ -122,7 +123,7 @@ label.center {
 
 
 textarea.form-control {
-	height: 200px;
+	height: 125px;
 }
 
 input, textarea {
@@ -159,4 +160,27 @@ input, textarea {
 
 #addReqTitle {
 	font-size: 20px;
+}
+
+.alert {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	text-align: center;
+	display: none;
+}
+
+.confirmDonationBut {
+	width: 235px;
+	margin: 0 auto;	
+}
+
+.pad {
+	height: 100px;
+}
+
+.addReqLastRow {
+	height: 250px;
 }
