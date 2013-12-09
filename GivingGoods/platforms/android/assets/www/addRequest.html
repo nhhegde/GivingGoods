@@ -108,7 +108,11 @@
         </div>
     </div> 
     <div class="row donateButRow footer">
-      <a id="donateBut" href="orgDashboardNew.html" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Add Request</a>
+      <a id="donateBut" href="#" class="btn btn-lg btn-block btn-success" onclick="thankuser();">Add Request</a>
+    </div>
+    <div class="alert">
+      <p>Your request has been added.</p>
+      <a href="dashboardNew.html"> <button class="btn btn-small btn-success confirmDonationBut"> OK </button></a>
     </div>
 
   </body>
@@ -125,4 +129,14 @@
     <script src="js/jquery.placeholder.js"></script>  
     <script src="js/application.js"></script>
     <script src="js/camera.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".alert").hide();
+      })
+
+      function thankuser() {
+        console.log("hi");
+        $(".alert").show();
+      }
+    </script>
 </html>

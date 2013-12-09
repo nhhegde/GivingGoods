@@ -150,6 +150,11 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/bada \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/bada-wac \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/blackberry \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/icon-36-ldpi.png \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/icon-48-mdpi.png \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/icon-72-hdpi.png \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/icon-96-xhdpi.png \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/icon.png \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/ios \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/tizen \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/res/icon/webos \
