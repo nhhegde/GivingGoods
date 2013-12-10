@@ -122,7 +122,15 @@
 	    map: map,
 	    title: "Walgreens"
 	  });
+	  var infowindow = new google.maps.InfoWindow({
+		    content: "Trader Joe's University and MLK"
+		});
+
+		google.maps.event.addListener(marker, 'click', (function () {
+		    infowindow.open(map, marker);
+		}));
       }
+      
       google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
