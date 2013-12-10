@@ -10,7 +10,7 @@
  <style>
       #map_canvas {
         
-        height: 220px;
+        height: 250px;
         margin-left: 10px;
       }
     </style>
@@ -79,16 +79,9 @@
 			</div>
 
 		</div>
-		<div class="container last">
-			<div class="locationsBar">
-		      <span class="locations">Dropoff locations</span>
-		    </div>
-			<ul class="nav nav-list orgsList">
-		      <li>
-		        <div id="map_canvas"></div>
-		      </li>
-		    </ul>
-		</div>
+		
+		<div id="map_canvas"></div>
+		    
 		<a id="donateBut" href="donationForm.html" class="btn btn-lg btn-block btn-success">Donate</a>
 			
 	</div>
@@ -112,7 +105,12 @@
         var map_options = {
           center: new google.maps.LatLng(37.8717, -122.2728),
           zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+		  panControl: false,
+		  zoomControl: false,
+		  scaleControl: false,
+		  mapTypeControl: false,
+  		  streetViewControl: false
         }
         var map = new google.maps.Map(map_canvas, map_options);
         $('#map_canvas').css({"width": window.width-30});
@@ -123,12 +121,13 @@
 	    title: "Walgreens"
 	  });
 	  var infowindow = new google.maps.InfoWindow({
-		    content: "Trader Joe's University and MLK"
+		    content: "Dropoff Location: Sproul Plaza"
 		});
 
-		google.maps.event.addListener(marker, 'click', (function () {
-		    infowindow.open(map, marker);
-		}));
+// 		google.maps.event.addListener(marker, 'click', (function () {
+// 		    infowindow.open(map, marker);
+// 		}));
+		infowindow.open(map, marker);
       }
       
       google.maps.event.addDomListener(window, 'load', initialize);
