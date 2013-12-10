@@ -404,13 +404,15 @@ a:hover {
 	bottom: 0;
 	margin-bottom: 5px;
 }
-
+.locations {
+	margin-left: 10px;
+}
 #sendBut {
 	height: 50px;
 	width: 65px;
 }
 
-.infoRow {
+.last {
 	height: 330px;
 }
 
