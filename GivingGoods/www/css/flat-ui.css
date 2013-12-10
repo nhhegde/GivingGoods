@@ -4642,7 +4642,9 @@ a.list-group-item.active > .badge,
   font-weight: 800;
   font-size: 22px;
   border-radius: 50px;
-  width: 35px;
+  width: 39px;
+  border: 2px solid #27ae60;
+  background: white;
 }
 .nav-header {
   color: #aeb6bf;

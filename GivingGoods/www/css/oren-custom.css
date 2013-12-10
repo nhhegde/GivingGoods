@@ -176,6 +176,8 @@ input, textarea {
 	width: 300px;
 	text-align: center;
 	display: none;
+	border: 2px solid #27ae60;
+	background: white;
 }
 
 .confirmDonationBut {
