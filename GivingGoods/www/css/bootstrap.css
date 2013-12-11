@@ -2264,8 +2264,6 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info {
   color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
 }
 
 .btn-info:hover,
@@ -3378,7 +3376,7 @@ input[type="button"].btn-block {
 .btn-warning .caret,
 .btn-danger .caret,
 .btn-info .caret {
-  border-top-color: #fff;
+  border-top-color: #ccc;
 }
 
 .dropup .btn-default .caret {

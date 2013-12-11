@@ -765,22 +765,23 @@ fieldset[disabled] .btn-primary.active {
   background-color: #1abc9c;
 }
 .btn-info {
-  color: #ffffff;
-  background-color: #3498db;
+  color: #ccc;
+  background-color: white;
+  border: 2px solid #cccccc;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #5dade2;
-  border-color: #5dade2;
+  color: #ccc;
+  background-color: white;
+  border-color: #ccc;
 }
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  background: #2c81ba;
+  background: #ccc;
 }
 .btn-info.disabled,
 .btn-info[disabled],
@@ -1866,7 +1867,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .select .btn .filter-option {
   height: 26px;
-  left: 13px;
+  left: 9px;
   overflow: hidden;
   position: absolute;
   right: 33px;
@@ -1875,7 +1876,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .select .btn .caret {
   position: absolute;
-  right: 16px;
+  right: 10px;
   top: 50%;
   margin-top: -3px;
 }
@@ -1910,8 +1911,8 @@ fieldset[disabled] .btn-link:focus {
   cursor: default;
 }
 .select .caret {
-  border-bottom-color: #ffffff;
-  border-top-color: #ffffff;
+  border-bottom-color: #ccc;
+  border-top-color: #ccc;
 }
 textarea {
   font-size: 20px;
@@ -3810,7 +3811,7 @@ fieldset[disabled] .input-group .input-group-btn:first-child .btn-default.active
 .dropdown-menu li.selected > a,
 .dropdown-menu li.active > a.highlighted,
 .dropdown-menu li.selected > a.highlighted {
-  background: #1abc9c;
+  background: #27ae60;
   color: #ffffff;
 }
 .dropdown-menu li.active > a:hover,
