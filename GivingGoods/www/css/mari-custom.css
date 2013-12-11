@@ -413,7 +413,8 @@ a:hover {
 }
 
 .last {
-	height: 0px;
+	height: 250px;
+	width: 100%;
 }
 
 .addReqLastRow {
