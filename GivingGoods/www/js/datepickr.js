@@ -61,6 +61,8 @@ var datepickr = (function() {
 					break;
 					case 'day':
 						this.element.value = formatDate(new Date(this.currentYearView, this.currentMonthView, e.target.innerHTML).getTime(), this.config);
+						$("#datepick").text(this.element.value);
+						$("#datepick").css({'color':'black'});
 						this.close();
 					break;
 				}
