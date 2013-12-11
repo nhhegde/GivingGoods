@@ -16,7 +16,7 @@ select {
 #datepick {
 	color: #bdc3c7;
 	padding: 0 0;
-	height: 42px;
+	height: 42px !important;
 }
 
 .dropdown-menu {
@@ -70,6 +70,7 @@ select {
 	display: inline-block;
 	margin-top: 0;
 	margin-right: -2px;
+	height: 42px !important;
 }
 #datepicker-01 {
 	display: inline-block;
