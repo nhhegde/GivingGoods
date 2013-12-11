@@ -71,6 +71,8 @@ select {
 	margin-top: 0;
 	margin-right: -2px;
 	height: 42px !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 #datepicker-01 {
 	display: inline-block;
