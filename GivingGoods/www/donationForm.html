@@ -167,7 +167,7 @@
       });
       $(datepickerSelector).click(function(){
         $('#calButton').css({'border-color': '#27ae60;'});
-      var off = window.outerWidth - $(datepickerSelector).datepicker('widget').outerWidth();
+      var off = window.outerWidth - $(datepickerSelector).datepicker('widget').outerWidth() - 30;
             $(datepickerSelector).datepicker('widget').css({'margin-left': 0});
             $(datepickerSelector).datepicker('widget').css({'left': off,'top': "132px"});
       })

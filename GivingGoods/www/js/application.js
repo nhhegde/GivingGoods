@@ -178,7 +178,7 @@ String.prototype.repeat = function(num) {
 
     // Switch
     $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
-
+    $(datepickerSelector).addClass("pull-left");
     // make code pretty
     window.prettyPrint && prettyPrint();
   });
