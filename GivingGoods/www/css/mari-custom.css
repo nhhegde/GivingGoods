@@ -428,3 +428,8 @@ a:hover {
 #map_canvas {
 	margin: 0px;
 }
+
+#mapImage {
+	height: 200px;
+	width: 100%;
+}
