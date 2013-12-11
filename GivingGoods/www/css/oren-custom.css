@@ -7,8 +7,18 @@ body {
 	margin-bottom: 0px;
 	text-align: center;
 }
-
-
+.form-group, .btn, .btn-group {
+	margin-bottom: 0px;
+}
+select {
+	color: #FFF;
+}
+.dropdown-menu {
+	margin-top: 3px !important;
+}
+.btn {
+	margin: 0px !important;
+}
 .navbar-default {
 	border-radius: 0px !important;
 	background: #27ae60;

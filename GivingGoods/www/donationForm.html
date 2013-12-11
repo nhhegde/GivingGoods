@@ -76,7 +76,7 @@
                   <span class="input-group-btn">
                     <button class="btn" id="calButton" for="datepicker-01" type="button"><span class="fui-calendar"></span></button>
                   </span>
-                  <input type="text" class="form-control" value="14 March, 2013" id="datepicker-01">
+                  <input type="text" class="form-control" placeholder="14 March, 2013" id="datepicker-01">
                 </div>
               </div>
               </div>
@@ -86,7 +86,12 @@
                 <label for="donationTime" class="control-label center">What time is best?</label>
                 </div>
                 <div class="col-xs-7"> 
-                <input type="text" class="form-control" placeholder="3:00 PM" id="donationTime">
+                <select name="info" class="col-xs-7">
+                    <option value="2">3:00 PM</option>
+                    <option value="3">4:00 PM</option>
+                    <option value="3">5:00 PM</option>
+                </select>
+                <!-- <input type="text" class="form-control" placeholder="3:00 PM" id="donationTime"> -->
               </div>
             </div>
             <div class="row col-xs-12">
@@ -139,29 +144,33 @@
     <script>
       $(document).ready(function() {
         $(".alert").hide();
+        $("select").selectpicker();
       })
 
       function thankuser() {
         console.log("hi");
         $(".alert").show();
       }
+
     </script>
+
     <script>
       var datepickerSelector = '#datepicker-01';
-$(datepickerSelector).datepicker({
-  showOtherMonths: true,
-  selectOtherMonths: true,
-  dateFormat: "d MM, yy",
-  yearRange: '-1:+1'
-}).prev('.btn').on('click', function (e) {
-  e && e.preventDefault();
-  $(datepickerSelector).focus();
-});
-$(datepickerSelector).click(function(){
-var off = window.outerWidth - $(datepickerSelector).datepicker('widget').outerWidth();
-      $(datepickerSelector).datepicker('widget').css({'margin-left': 0});
-      $(datepickerSelector).datepicker('widget').css({'left': off});
-})
+      $(datepickerSelector).datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dateFormat: "d MM, yy",
+        yearRange: '-1:+1'
+      }).prev('.btn').on('click', function (e) {
+        e && e.preventDefault();
+        $(datepickerSelector).focus();
+      });
+      $(datepickerSelector).click(function(){
+        $('#calButton').css({'border-color': '#27ae60;'});
+      var off = window.outerWidth - $(datepickerSelector).datepicker('widget').outerWidth();
+            $(datepickerSelector).datepicker('widget').css({'margin-left': 0});
+            $(datepickerSelector).datepicker('widget').css({'left': off,'top': "132px"});
+      })
       
     </script>
     
