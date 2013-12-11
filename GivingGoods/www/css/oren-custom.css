@@ -15,7 +15,9 @@ select {
 }
 #datepick {
 	color: #bdc3c7;
+	padding: 0 0;
 }
+
 .dropdown-menu {
 	margin-top: 3px !important;
 }
