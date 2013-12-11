@@ -765,22 +765,23 @@ fieldset[disabled] .btn-primary.active {
   background-color: #1abc9c;
 }
 .btn-info {
-  color: #ffffff;
-  background-color: #3498db;
+  color: #ccc;
+  background-color: white;
+  border: 2px solid #cccccc;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #5dade2;
-  border-color: #5dade2;
+  color: #ccc;
+  background-color: white;
+  border-color: #ccc;
 }
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  background: #2c81ba;
+  background: #ccc;
 }
 .btn-info.disabled,
 .btn-info[disabled],
@@ -1866,7 +1867,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .select .btn .filter-option {
   height: 26px;
-  left: 13px;
+  left: 9px;
   overflow: hidden;
   position: absolute;
   right: 33px;
@@ -1875,7 +1876,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .select .btn .caret {
   position: absolute;
-  right: 16px;
+  right: 10px;
   top: 50%;
   margin-top: -3px;
 }
@@ -1910,8 +1911,8 @@ fieldset[disabled] .btn-link:focus {
   cursor: default;
 }
 .select .caret {
-  border-bottom-color: #ffffff;
-  border-top-color: #ffffff;
+  border-bottom-color: #ccc;
+  border-top-color: #ccc;
 }
 textarea {
   font-size: 20px;
@@ -3810,7 +3811,7 @@ fieldset[disabled] .input-group .input-group-btn:first-child .btn-default.active
 .dropdown-menu li.selected > a,
 .dropdown-menu li.active > a.highlighted,
 .dropdown-menu li.selected > a.highlighted {
-  background: #1abc9c;
+  background: #27ae60;
   color: #ffffff;
 }
 .dropdown-menu li.active > a:hover,
@@ -4181,7 +4182,7 @@ fieldset[disabled] .input-group .input-group-btn:first-child .btn-default.active
   font-weight: normal;
   color: #ffffff;
   line-height: 1.615;
-  background-color: #d8dce0;
+  background-color: #fff;
   border-radius: 4px;
   padding: 0 8px;
 }
@@ -4637,7 +4638,14 @@ a.list-group-item.active > .badge,
   text-shadow: none;
 }
 .nav-list .badge.pull-right {
-  margin: 1px -4px -1px 0;
+  /* margin: 1px -4px -1px 0; */
+  color: #27ae60;
+  font-weight: 800;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 37px;
+  border: 1px solid #27ae60;
+  background: white;
 }
 .nav-header {
   color: #aeb6bf;
@@ -4915,7 +4923,7 @@ a.list-group-item.active > .badge,
   margin: 0 4px 0 9px;
 }
 .popover {
-  background-color: #edeff1;
+  background-color: #ecf0f1;
   border: none;
   padding: 0;
   -webkit-box-shadow: none;
@@ -4956,7 +4964,6 @@ a.list-group-item.active > .badge,
   padding: 10px 20px 11px;
 }
 .popover-content {
-  padding: 9px 20px 1px;
 }
 .popover-content p {
   font-size: 14px;

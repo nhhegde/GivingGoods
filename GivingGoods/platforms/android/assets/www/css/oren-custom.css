@@ -7,8 +7,18 @@ body {
 	margin-bottom: 0px;
 	text-align: center;
 }
-
-
+.form-group, .btn, .btn-group {
+	margin-bottom: 0px;
+}
+select {
+	color: #FFF;
+}
+.dropdown-menu {
+	margin-top: 3px !important;
+}
+.btn {
+	margin: 0px !important;
+}
 .navbar-default {
 	border-radius: 0px !important;
 	background: #27ae60;
@@ -83,8 +93,10 @@ label.center {
 	padding: 0 0;
 	border-top: 0px !important;
 }
-.ui-datepicker {
-	left: 60px !important;
+.ui-datepicker:before {
+	border-style: none;
+	position: fixed !important;
+	left: 0 !important;
 }
 .btn-primary {
 	padding-left: 2px;
@@ -110,10 +122,14 @@ label.center {
 
 .ui-datepicker {
 	border: 7px solid #27ae60;
+	margin-left: auto;
 }
 
 .ui-datepicker .ui-datepicker-next {
 	border-left: 2px solid #27ae60;
+}
+.ui-datepicker .ui-datepicker-header{
+	background-color: #27ae60;
 }
 
 .ui-datepicker .ui-datepicker-prev {
@@ -170,6 +186,8 @@ input, textarea {
 	width: 300px;
 	text-align: center;
 	display: none;
+	border: 2px solid #27ae60;
+	background: white;
 }
 
 .confirmDonationBut {

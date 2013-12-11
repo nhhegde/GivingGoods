@@ -43,6 +43,7 @@
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/css/font-awesome.min.css \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/css/index.css \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/css/mari-custom.css \
+/Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/css/neil-custom.css \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/css/oren-custom.css \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/css/steph.css \
 /Users/neilh/Desktop/givingGoods/GivingGoods/platforms/android/assets/www/fonts/Flat-UI-Icons.dev.svg \

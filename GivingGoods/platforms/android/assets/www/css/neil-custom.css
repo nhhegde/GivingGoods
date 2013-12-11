@@ -1,0 +1,8 @@
+.ui-datepicker .ui-state-active {
+	background-color: #27ae60;
+	color: #ffffff;
+}
+
+.form-group.focus .form-control, .form-control:focus {
+	border-color: #27ae60;
+}
